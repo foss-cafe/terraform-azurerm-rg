@@ -3,7 +3,12 @@
 ## How to use it as a module
 
 ```hcl
-
+module "rg" {
+  source  = "foss-cafe/rg/azurerm"
+  version = "1.0.0"
+  name = "example-rg"
+  location = "East US"
+}
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
